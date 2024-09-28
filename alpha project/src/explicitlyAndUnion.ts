@@ -155,3 +155,23 @@ let users: {
 let userOrGuest: { name: string; age: number; isAdmin: boolean } | string;
 userOrGuest = { name: "Alice", age: 30, isAdmin: true };
 userOrGuest = "Guest User";
+
+/**
+ * Function
+ * 1. Explicitly define type at declare time
+ */
+
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+/**
+ * 2. Union type give us facality various type data can store or assign the variable
+ */
+
+function addOrConcat(a: number | string, b: number | string): number | string {
+  if (typeof a === "number" && typeof b === "number") {
+    return a + b;
+  }
+  return a.toString() + b.toString();
+}
