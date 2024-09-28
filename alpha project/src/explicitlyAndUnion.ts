@@ -31,3 +31,18 @@ let ageOrScore: number | string;
 
 ageOrScore = 32;
 ageOrScore = "Thirty two";
+
+/**
+ * Boolean
+ * 1. Explicitly define type at declare time
+ */
+
+let isAdmin: boolean = true;
+
+/**
+ * 2. Union type give us facality various type data can store or assign the variable
+ */
+
+let isAdminOrStatus: boolean | string;
+isAdminOrStatus = true;
+isAdminOrStatus = "active";
