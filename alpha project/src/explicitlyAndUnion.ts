@@ -111,3 +111,47 @@ b.push("John", 32, true);
 let scoresOrComments: number[] | string[];
 scoresOrComments = [85, 90, 92];
 scoresOrComments = ["Good", "Bad"];
+
+/**
+ * Object
+ * 1. Explicitly define type at declare time
+ */
+
+let c: object;
+c = { name: "John", age: 32 };
+
+// explicitly define type but you can also use as array because array is also object in javascript
+
+//array
+
+let d: object;
+
+d = [{ name: "John", age: 32 }, "Hello", true];
+
+let e: {
+  name: string;
+  age: number;
+  isAdult: boolean;
+};
+
+e = { name: "John", age: 32, isAdult: true };
+
+//example 2
+
+let users: {
+  name: string;
+  age: number;
+  isAdult: boolean;
+} = {
+  name: "John",
+  age: 32,
+  isAdult: true,
+};
+
+/**
+ * 2. Union type give us facality various type data can store or assign the variable
+ */
+
+let userOrGuest: { name: string; age: number; isAdmin: boolean } | string;
+userOrGuest = { name: "Alice", age: 30, isAdmin: true };
+userOrGuest = "Guest User";
