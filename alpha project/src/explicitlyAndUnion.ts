@@ -46,3 +46,18 @@ let isAdmin: boolean = true;
 let isAdminOrStatus: boolean | string;
 isAdminOrStatus = true;
 isAdminOrStatus = "active";
+
+/**
+ * Tuple
+ * 1. Explicitly define type at declare time
+ */
+
+let user: [string, number, boolean] = ["John", 32, true];
+
+/**
+ * 2. Union type give us facality various type data can store or assign the variable
+ */
+
+let userOrAdmin: [string, number, boolean] | string;
+userOrAdmin = ["John", 32, true];
+userOrAdmin = "active";
