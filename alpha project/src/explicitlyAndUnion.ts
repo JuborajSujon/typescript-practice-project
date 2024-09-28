@@ -61,3 +61,29 @@ let user: [string, number, boolean] = ["John", 32, true];
 let userOrAdmin: [string, number, boolean] | string;
 userOrAdmin = ["John", 32, true];
 userOrAdmin = "active";
+
+/**
+ * Enum
+ * 1. Explicitly define type at declare time
+ */
+
+enum Role {
+  Admin,
+  User,
+  Guest,
+}
+let userRole: Role = Role.Admin; // Explicitly using the Admin enum
+
+/**
+ * 2. Union type give us facality various type data can store or assign the variable
+ */
+
+enum Status {
+  Active,
+  Inactive,
+}
+
+let userStatus: Status | string;
+
+userStatus = Status.Active;
+userStatus = "Pending";
