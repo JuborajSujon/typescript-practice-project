@@ -87,3 +87,27 @@ let userStatus: Status | string;
 
 userStatus = Status.Active;
 userStatus = "Pending";
+
+/**
+ * Array
+ * 1. Explicitly define type at declare time
+ */
+
+let scores: number[] = [85, 90, 92];
+
+let a: string[] = [];
+
+a.push("John", "32", "true");
+
+/**
+ * 2. Union type give us facality various type data can store or assign the array , this example you can store `string` and `number` type data in array
+ */
+
+let b: (string | number | boolean)[] = [];
+
+b.push("John", 32, true);
+
+//example 2
+let scoresOrComments: number[] | string[];
+scoresOrComments = [85, 90, 92];
+scoresOrComments = ["Good", "Bad"];
