@@ -18,8 +18,11 @@
 
 // 2nd variation :
 
-const year = document.getElementById("year") as HTMLElement;
-const thisYear: string = new Date().getFullYear().toString();
+document.addEventListener("DOMContentLoaded", () => {
+  const year = document.getElementById("year") as HTMLElement;
 
-year.setAttribute("datetime", thisYear);
-year.textContent = thisYear;
+  const thisYear: string = new Date().getFullYear().toString();
+
+  year.setAttribute("datetime", thisYear);
+  year.textContent = thisYear;
+});

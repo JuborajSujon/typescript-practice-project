@@ -14,7 +14,9 @@
 //   year.textContent = thisYear;
 // }
 // 2nd variation :
-const year = document.getElementById("year");
-const thisYear = new Date().getFullYear().toString();
-year.setAttribute("datetime", thisYear);
-year.textContent = thisYear;
+document.addEventListener("DOMContentLoaded", () => {
+    const year = document.getElementById("year");
+    const thisYear = new Date().getFullYear().toString();
+    year.setAttribute("datetime", thisYear);
+    year.textContent = thisYear;
+});
