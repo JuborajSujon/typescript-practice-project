@@ -62,3 +62,17 @@ const greetGuitarist = (guitarist: Guitarist) => {
 };
 
 console.log(greetGuitarist(jp));
+
+// Enums
+
+// Unlike most typescript features, enums are not a type-level addition to javascript but something added to the language and runtime.
+
+enum Grade {
+  U,
+  D,
+  C,
+  B,
+  A,
+}
+
+console.log(Grade.D);
