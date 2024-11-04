@@ -2,7 +2,7 @@
 
   // string 
   let fullName1 = "sujon miah" // implicity 
-  let fullName2 = "sujon miah" //explicity
+  let fullName2:string = "sujon miah" //explicity
 
 
   // number
