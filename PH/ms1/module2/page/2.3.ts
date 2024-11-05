@@ -30,7 +30,7 @@
   // Generic Tuple
 
   type GenericTuple<X, Y> = [X, Y];
-  type person2 = {
+  interface person2 {
     name: string;
     email: string;
   }
