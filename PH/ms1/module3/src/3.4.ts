@@ -62,7 +62,7 @@
   }
 
   const dog = new Dog("Dog Bhai", "dog");
-  const cat = new Car("Cat Bhai", "cat");
+  const cat = new Cat("Cat Bhai", "cat");
 
 
 
